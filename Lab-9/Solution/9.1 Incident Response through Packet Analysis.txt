@@ -1,0 +1,11 @@
+first packet send from 10.3.66.103 to kennedy.sitoserver.com at 
+9.1.1. Arrival Time: Nov  7, 2015 04:22:38.688933000 +06
+9.1.2.  10.3.66.103 
+9.1.3 Address: Dell_2d:90:81 (00:24:e8:2d:90:81)
+9.1.4 
+Ethernet II, Src: Dell_2d:90:81 (00:24:e8:2d:90:81)
+User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0)\r\n
+
+Windows NT 6.1= Windows 7
+9.1.5 the fourth mail :  2015-11-06-traffic-analysis-exercise-email-04.eml
+

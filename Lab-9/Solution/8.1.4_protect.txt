@@ -1,0 +1,3 @@
+We can enable X-XSS-Protection =1 to stop cross site scripting attack.
+
+For preventing cookie hijacking we can enable secure/safe browsing for facebook.

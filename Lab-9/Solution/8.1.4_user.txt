@@ -1,0 +1,5 @@
+visited 
+arstechnica.com
+www.aljazeera.net.c.itmdb.net
+
+because we can find packets going and coming from these adresses. User probably clicked any url directing to these websites during browsing facebook.

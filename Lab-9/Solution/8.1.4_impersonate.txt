@@ -1,0 +1,3 @@
+Since XSS protections is disabled , the website could be at risk of a Cross-site Scripting (XSS) attacks.
+
+For cookie hijacking, the attacker can get the session cookie from get request packet and log into the current session, then do harm to the victim.

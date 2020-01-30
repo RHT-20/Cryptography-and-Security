@@ -1,0 +1,3 @@
+X-XSS-Protection: 0 which means XSS protection is disable
+
+There is also chance for cookie hijacking.

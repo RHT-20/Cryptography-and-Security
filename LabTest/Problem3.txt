@@ -1,0 +1,13 @@
+# of IP addresses involved:
+Wireshark -> Statistics -> Endpoints -> IP
+
+# of TCP sessions:
+Wireshark -> Statistics -> Conversations -> TCP
+
+To check each TCP session:
+tcp.stream eq i
+Here, i = 0 to # of TCP sessions
+
+To check summary of each TCP session:
+Right click -> Follow -> TCP stream
+
